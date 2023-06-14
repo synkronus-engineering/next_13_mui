@@ -1,15 +1,16 @@
-"use client"
-import Switch from "@mui/material/Switch";
 
-const label = { inputProps: { "aria-label": "Switch demo" } };
+import AppFooter from "@/src/@page-sections/layouts/AppFooter";
+import ProductCategories from "@/src/@page-sections/landing/ProductCategories";
+import ProductHero from "@/src/@page-sections/landing/ProductHero";
+import ProductValues from "@/src/@page-sections/landing/ProductValues";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className='container'>
-      <div>
-        <span>With default Theme:</span>
-      </div>
-      <Switch {...label} defaultChecked />
-    </div>
-  )
+    <>
+        <ProductHero />
+        <ProductValues />
+        <ProductCategories />
+        <AppFooter />
+    </>
+  );
 }
